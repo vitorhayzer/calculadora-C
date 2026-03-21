@@ -87,6 +87,7 @@ int main() {
 
          default:
             printf("opção invalida");
+            return 666;
              break;
 
             
