@@ -4,6 +4,23 @@
 
 #include <math.h>
 
+float soma(float a, float b){
+    return a + b;
+}
+
+float sub(float a, float b){
+    return a - b;
+}
+float mult(float a, float b){
+    return a * b;
+}
+float divis(float a, float b){
+    return a / b;
+}
+
+
+
+
 int main() {
     float num1 = 0, num2 = 0, num3 = 0, res = 0;
     int i = 0;
@@ -22,24 +39,24 @@ int main() {
         printf("digite a massa e a aceleraçao pra obter a força\n");
         scanf("%f %f", & num1, & num2);
 
-    } else {
+    }else {
         printf("digite os numeros da operacao\n");
         scanf("%f %f", & num1, & num2);
     }
 
     switch (i) {
         case 1:
-            res = num1 + num2;
+            res =soma(num1, num2);
             printf("resultado: %.3f", res);
             break;
 
         case 2:
-            res = num1 - num2;
+            res = sub(num1, num2);
             printf("resultado: %.3f", res);
             break;
 
         case 3:
-            res = num1 * num2;
+            res = mult(num1, num2);
             printf("resultado: %.3f", res);
             break;
 
@@ -48,7 +65,7 @@ int main() {
                 printf("divisao por 0 detectada");
                 return 666;
             }
-            res = num1 / num2;
+            res = divis(num1, num2);
             printf("resultado: %.3f", res);
             break;
 
@@ -79,8 +96,8 @@ int main() {
         
 
         case 7:{
-            float f = num1 * num2;
-            printf("\nforça: %.3f", f);
+            float f = mult(num1, num2);
+            printf("\nforça: %.3fN", f);
             break;
         }
         
