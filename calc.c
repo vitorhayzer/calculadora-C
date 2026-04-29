@@ -24,7 +24,7 @@ float divis(float a, float b){
 int main() {
     float num1 = 0, num2 = 0, num3 = 0, res = 0;
     int i = 0;
-    printf("-----MATEMATICA-----\n\n1-soma\n2-sub\n3-mult\n4-div\n5-sen, cos e tan\n6-bhaskara\n \n-----FISICA-----\n\n 7-força\n");
+    printf("-----MATEMATICA-----\n\n1-soma\n2-sub\n3-mult\n4-div\n5-sen, cos e tan\n6-bhaskara\n \n-----FISICA-----\n\n 7-forca\n");
     scanf("%d", & i);
 
     if (i == 5) {
@@ -46,18 +46,18 @@ int main() {
 
     switch (i) {
         case 1:
-            res =soma(num1, num2);
-            printf("resultado: %.3f", res);
+        
+            printf("resultado: %.3f", soma(num1, num2));
             break;
 
         case 2:
-            res = sub(num1, num2);
-            printf("resultado: %.3f", res);
+    
+            printf("resultado: %.3f", sub(num1, num2));
             break;
 
         case 3:
-            res = mult(num1, num2);
-            printf("resultado: %.3f", res);
+            
+            printf("resultado: %.3f", mult(num1, num2));
             break;
 
         case 4:
@@ -65,8 +65,8 @@ int main() {
                 printf("divisao por 0 detectada");
                 return 666;
             }
-            res = divis(num1, num2);
-            printf("resultado: %.3f", res);
+            
+            printf("resultado: %.3f", divis(num1, num2));
             break;
 
         case 5: {
